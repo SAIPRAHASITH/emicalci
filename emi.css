@@ -1,0 +1,35 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color:white;
+    background-image: url("https://i.pinimg.com/originals/51/6b/34/516b3477d2e19e12344007e33ef6c69c.jpg");
+    overflow: hidden;
+}
+#h2{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding-top: 70px;
+    color:rgb(106, 196, 216)
+}
+.border{
+    margin-top: 30PX;
+    border: 4px solid white;
+    border-width: 100px;
+    padding-left: 30px;
+    text-align: 40px;
+}
+.form-element{
+    border: 1px solid black;
+    width:120px;
+    height:30px;
+    background-color: rgb(245, 232, 232);
+    color:rgb(19, 16, 16);
+    padding: 10px;
+}
+#btmid{
+    margin-left: 130px;
+    width: 200px;
+}
+.bold{
+    font-weight: bold;
+}
