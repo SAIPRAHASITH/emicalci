@@ -6,10 +6,59 @@
         <title>EMI CALCULATOR</title>
         <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
         <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">   
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body><!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EMI CALCULATOR</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">   
         <link rel="stylesheet" href="./emi.css">
         <script src="./emi.js"></script>
     </head>
     <body>
+        <div class="container-fluid">
+            <div class="row">
+                 <div class="col-md-4"></div>
+                <div class="col-md-4" id="box">
+                    <h2 id="h2">EMI CALCULATOR</h2>
+                    <div class="border">
+                       <p id="center"> AMOUNT YOU NEED:</p>
+                        <div class="input-group">
+                            1000<input type="range" onchange="Amountchange()" min="1000" max="400000" value="0" id="amountRange" step="1000" required>400000
+                             <pre>   </pre> <span >&#8377;</span> <pre> </pre><input type="text"  class="form-element" id="txtAmount" required>
+                        </div>
+                        <p id="center"> TIME REQUIRED</p>
+                        <div class="input-group">
+                            0.5<input type="range" min="0.5" max="10" step="0.5" value="0" id="yearRange"onchange="yearchange()" required>10
+                             <pre>   </pre>YEARS<input type="text"class="form-element" id="txtyears" required>
+                        </div>
+                        <p id="center">RATE OF INTEREST</p>
+                        <div class="input-group">
+                            10%<input type="range" min="10" max="20" step="1" id="interstRange" onchange="intrestchange()" value="0" required>20%
+                             <pre>   </pre>  <input type="text"  class="form-element" id="txtInterest" required>%
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <br>
+                      <button class="btn btn-primary" onclick="calucalte()" id="btmid">CALCULATE THE EMI</button>
+                    </div>
+                    <div>
+                             <p id="principle" class="bold"></p>
+                             <p id="years" class="bold"></p>
+                             <p id="interest" class="bold"></p> 
+                              <p id="emi" class="bold"></p>      
+                    </div>    
+                </div>
+                 <div class="col-md-4"></div>
+            </div>
+        </div>
+    </body>
+</html>        
         <div class="container-fluid">
             <div class="row">
                  <div class="col-md-4"></div>
